@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FAS" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorSurface">@color/white</item>
+    </style>
+
+    <style name="Theme.FAS" parent="Base.Theme.FAS" >
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="pinViewStyle">@style/PinWidget.PinView</item>
+    </style>
+</resources>

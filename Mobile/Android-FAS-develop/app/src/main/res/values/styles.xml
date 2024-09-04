@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTextInputLayoutShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="shapeAppearanceOverlay">@style/CustomTextInputLayoutShape</item>
+        <item name="hintTextAppearance">@style/TextContentNormal</item>
+    </style>
+
+    <style name="CustomEditText" parent="">
+        <item name="android:gravity">center|start</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_primary_state</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="OutLineButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_outline_bg</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextContentTitleLarge" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="TextContentTitleNormal" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="TextContentTitleSmall" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="TextHeader" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="TextContentNormalSmall" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="TextContentNormalExtraSmall" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center|start</item>
+    </style>
+
+    <style name="TextContentNormal" parent="">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default Margin Sizes -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_extra_small">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_extra_medium">24dp</dimen>
+    <dimen name="margin_large">42dp</dimen>
+    <dimen name="margin_extra_large">52dp</dimen>
+
+    <!-- Default Text Sizes -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_extra_large">24sp</dimen>
+    <dimen name="text_size_huge">32sp</dimen>
+
+    <!-- Default Icon Sizes -->
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="icon_size_medium">32dp</dimen>
+    <dimen name="icon_size_large">48dp</dimen>
+    <dimen name="icon_size_extra_large">64dp</dimen>
+
+    <!-- Default Elevation Sizes -->
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+    <dimen name="elevation_extra_large">16dp</dimen>
+
+    <!-- Default Corner Radius Sizes -->
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="corner_radius_medium">8dp</dimen>
+    <dimen name="corner_radius_large">12dp</dimen>
+    <dimen name="corner_radius_extra_large">18dp</dimen>
+
+    <!-- Default Line Height Sizes -->
+    <dimen name="line_height_small">16sp</dimen>
+    <dimen name="line_height_medium">20sp</dimen>
+    <dimen name="line_height_large">24sp</dimen>
+    <dimen name="line_height_extra_large">28sp</dimen>
+
+    <!-- Default Divider Sizes -->
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Default Button Sizes -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_min_width">88dp</dimen>
+    <dimen name="button_small_height">42dp</dimen>
+
+    <!-- Icon Sizes -->
+    <dimen name="icon_height">80dp</dimen>
+    <dimen name="icon_width">80dp</dimen>
+
+    <dimen name="icon_height_small">40dp</dimen>
+    <dimen name="icon_width_small">40dp</dimen>
+
+    <!-- Default Toolbar Sizes -->
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!-- Default Image Sizes -->
+    <dimen name="image_size_small">48dp</dimen>
+    <dimen name="image_size_medium">72dp</dimen>
+    <dimen name="image_size_large">96dp</dimen>
+
+</resources>

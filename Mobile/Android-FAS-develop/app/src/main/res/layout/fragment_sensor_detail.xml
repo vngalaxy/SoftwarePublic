@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/margin_medium"
+    android:background="@color/white"
+    tools:context=".presentation.views.sensor.SensorDetailFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_medium"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sensor_name_txt"
+        style="@style/TextHeader"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edit_sensor"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        tools:text="Cảm biến nhiệt" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_edit_sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_medium"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBack"
+        app:tint="@color/black" />
+
+    <com.vaibhavlakhera.circularprogressview.CircularProgressView
+        android:id="@+id/value_progress"
+        android:layout_width="217dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:animate="true"
+        app:animateDuration="600"
+        app:fillColor="@color/gray_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensor_name_txt"
+        app:progressColor="@color/primary"
+        app:progressInterpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:progressRoundCap="true"
+        app:progressTextColor="@color/white"
+        app:progressTextEnabled="true"
+        app:progressTextSize="40sp"
+        app:progressWidth="8dp"
+        app:startAngle="270"
+        app:totalColor="@color/gray_purple"
+        app:totalWidth="8dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sensor_chart_txt"
+        style="@style/TextContentNormalSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_extra_medium"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/sensor_status_txt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value_progress"
+        tools:text="Biểu đồ giá trị cảm biến lửa" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sensor_status_txt"
+        style="@style/TextContentNormalSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sensor_chart_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sensor_chart_txt"
+        tools:text="Bình thường" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/sensor_chart"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensor_chart_txt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

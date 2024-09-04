@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sensor"
+        android:icon="@drawable/ic_sensor"
+        android:title="@string/sensor" />
+
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/ic_users"
+        android:title="@string/users" />
+
+    <item
+        android:id="@+id/room"
+        android:icon="@drawable/ic_rooms"
+        android:title="@string/room" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/setting" />
+</menu>
